@@ -11,6 +11,12 @@ Then the graph is written to .dot file and plotted using KGraphViewer.
 
 ![boost_graph_example_4 output](boost_graph_example_4.png)
 
+Prerequisites:
+
+```
+sudo apt-get install libpoppler-qt5-dev dot2tex
+```
+
 Related examples:
 
  * [boost_graph_example_1](https://github.com/richelbilderbeek/boost_graph_example_1)

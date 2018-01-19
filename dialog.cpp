@@ -5,6 +5,7 @@
 #include <boost/graph/adjacency_list.hpp>
 #include <boost/graph/graphviz.hpp>
 
+//Does not compile? Do 'sudo apt-get install libpoppler-qt5-dev'
 #include <poppler/qt5/poppler-qt5.h>
 #include "ui_dialog.h"
 
@@ -73,6 +74,7 @@ Dialog::Dialog(QWidget *parent) :
     f.close();
   }
   //Convert test.dot file to test.pdf
+  //Don't forget: 'sudo apt-get install dot2tex'
   std::system("dot2tex test.dot > test.tex");
   std::system("texi2pdf test.tex");
 
