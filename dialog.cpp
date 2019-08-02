@@ -75,8 +75,10 @@ Dialog::Dialog(QWidget *parent) :
   }
   //Convert test.dot file to test.pdf
   //Don't forget: 'sudo apt-get install dot2tex'
-  std::system("dot2tex test.dot > test.tex");
-  std::system("texi2pdf test.tex");
+  const int result_1 = std::system("dot2tex test.dot > test.tex");
+  assert(result_1 == 0);
+  const int result_2 = std::system("texi2pdf test.tex");
+  assert(result_2 == 0);
 
   //Load test.pdf in QLabel
   Poppler::Document *doc = Poppler::Document::load("test.pdf");
