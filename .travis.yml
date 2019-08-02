@@ -14,7 +14,10 @@ install:
   # Poppler
   - sudo apt-get install libpoppler-qt5-dev
 
+services:
+ - xvfb
+
 script: 
   - qmake
-  - make
+  - make --silent
   - ./boost_graph_example_4
