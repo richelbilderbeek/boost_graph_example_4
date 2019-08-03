@@ -23,3 +23,9 @@ LIBS += -lboost_graph
 
 # Poppler
 LIBS += -lpoppler-qt5
+
+# Debug and release settings
+CONFIG += debug_and_release
+CONFIG(release, debug|release) {
+  DEFINES += NDEBUG
+}
