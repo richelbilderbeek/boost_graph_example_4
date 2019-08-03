@@ -21,5 +21,5 @@ services:
 
 script: 
   - qmake
-  - make --silent
+  - make --silent debug
   - ./boost_graph_example_4
