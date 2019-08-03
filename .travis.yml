@@ -11,6 +11,8 @@ install:
   - export QMAKE=/usr/lib/x86_64-linux-gnu/qt5/bin/qmake
   # GraphViz
   - sudo apt-get install -qq graphviz
+  # dot2tex
+  - sudo apt-get install -qq dot2tex
   # Poppler
   - sudo apt-get install libpoppler-qt5-dev
 

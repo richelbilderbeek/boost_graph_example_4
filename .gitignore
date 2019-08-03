@@ -36,3 +36,8 @@ Makefile
 travis_qmake_gcc_cpp98_gcov
 travis_qmake_gcc_cpp98
 travis_qmake_gcc_cpp98_boost
+.qmake.stash
+ui_dialog.h
+boost_graph_example_4
+moc_*
+test.*
