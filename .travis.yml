@@ -21,5 +21,6 @@ services:
 
 script: 
   - qmake
-  - make --silent debug
-  - ./boost_graph_example_4
+  - make --silent
+  # Do not run on Travis
+  # - ./boost_graph_example_4
